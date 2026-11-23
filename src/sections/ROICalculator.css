@@ -1,0 +1,157 @@
+
+.roi-section {
+  background: var(--surface);
+}
+
+.roi-section .section-heading h2 span {
+  color: var(--zento-accent);
+}
+
+.roi-calculator {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 22px;
+  background: var(--page-bg);
+}
+
+.roi-controls {
+  padding: 36px;
+}
+
+.roi-control {
+  margin-bottom: 36px;
+}
+
+.roi-control-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.roi-control-heading label {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.roi-control-heading strong {
+  color: var(--text-primary);
+  font-size: 15px;
+}
+
+.roi-control input[type="range"] {
+  width: 100%;
+  accent-color: var(--brand-primary);
+  cursor: pointer;
+}
+
+.roi-range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.roi-monthly-summary {
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+.roi-monthly-summary span,
+.roi-monthly-summary strong {
+  display: block;
+}
+
+.roi-monthly-summary span {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.roi-monthly-summary strong {
+  margin-top: 10px;
+  color: var(--text-primary);
+  font-size: 25px;
+  letter-spacing: -0.03em;
+}
+
+.roi-results {
+  padding: 36px;
+  background: var(--zento-dark);
+  color: #ffffff;
+}
+
+.roi-results-label {
+  color: #b9a0ff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.roi-result {
+  margin-top: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(185, 160, 255, 0.16);
+}
+
+.roi-result span,
+.roi-result strong,
+.roi-result small {
+  display: block;
+}
+
+.roi-result span {
+  color: #c9c1d8;
+  font-size: 12px;
+}
+
+.roi-result strong {
+  margin: 12px 0;
+  color: #ffffff;
+  font-size: clamp(24px, 3vw, 34px);
+  letter-spacing: -0.04em;
+}
+
+.roi-result small {
+  color: #a99bbf;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.roi-cta {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.roi-disclaimer {
+  max-width: 850px;
+  margin: 22px auto 0;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .roi-calculator {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .roi-controls,
+  .roi-results {
+    padding: 24px;
+  }
+
+  .roi-control-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

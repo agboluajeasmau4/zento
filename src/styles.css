@@ -1,0 +1,142 @@
+
+/* =========================
+   ZENTO DESIGN SYSTEM
+========================= */
+
+:root {
+  --zento-dark: #190f2e;
+  --zento-surface: #2b1657;
+  --zento-primary: #6c3bff;
+  --zento-accent: #b9a0ff;
+  --zento-light: #f8f6fd;
+
+  --brand-primary: #6c3bff;
+  --brand-hover: #5728e8;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   DARK THEME
+========================= */
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --page-bg: #190f2e;
+  --surface: #24143f;
+  --surface-hover: #322052;
+
+  --nav-bg: rgba(25, 15, 46, 0.94);
+  --footer-bg: #150b28;
+
+  --text-primary: #ffffff;
+  --text-secondary: #c9c1d8;
+  --text-muted: #9388aa;
+  --footer-text: #ffffff;
+
+  --border-color: rgba(185, 160, 255, 0.14);
+
+  --nav-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   LIGHT THEME
+========================= */
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --page-bg: #f8f6fd;
+  --surface: #ffffff;
+  --surface-hover: #f0ebfc;
+
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --footer-bg: #f0ebfc;
+
+  --text-primary: #1c1730;
+  --text-secondary: #625a75;
+  --text-muted: #8a829b;
+  --footer-text: #190f2e;
+
+  --border-color: rgba(108, 59, 255, 0.14);
+
+  --nav-shadow: 0 20px 40px rgba(25, 15, 46, 0.08);
+}
+
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+  background: var(--page-bg);
+  color: var(--text-primary);
+
+  -webkit-font-smoothing: antialiased;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  /* min-height: 60vh; */
+  flex: 1;
+  width: 100%;
+}
+
+::selection {
+  background: #6c3bff;
+  color: #ffffff;
+}
+
+/* =========================
+   NOT FOUND PAGE
+========================= */
+
+.not-found {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 24px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .not-found {
+    margin: 60px auto;
+  }
+}

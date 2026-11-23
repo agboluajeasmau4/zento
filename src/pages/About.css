@@ -1,0 +1,510 @@
+
+.about-page {
+  overflow: hidden;
+  background: var(--page-bg);
+  color: var(--text-primary);
+}
+
+/* Hero */
+
+.about-hero {
+  padding: 110px 24px 100px;
+  background:
+    radial-gradient(
+      ellipse at 75% 20%,
+      rgba(108, 59, 255, 0.17),
+      transparent 45%
+    ),
+    var(--page-bg);
+}
+
+.about-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-hero-content h1 {
+  margin: 26px 0;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -0.055em;
+}
+
+.about-hero-content h1 span {
+  color: var(--zento-accent);
+}
+
+.about-hero-content > p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.about-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.about-hero-signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 44px;
+  color: var(--text-muted);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.about-signature-line {
+  width: 32px;
+  height: 1px;
+  background: var(--brand-primary);
+}
+
+/* Company purpose */
+
+.about-purpose {
+  background: var(--surface);
+}
+
+.about-purpose-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: start;
+  gap: 80px;
+}
+
+.about-purpose-heading h2 {
+  margin: 22px 0 0;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+}
+
+.about-purpose-heading h2 span {
+  color: var(--zento-accent);
+}
+
+.about-purpose-copy p {
+  margin: 0 0 20px;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 2;
+}
+
+.about-purpose-copy p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mission and vision */
+
+.about-mission {
+  background: var(--page-bg);
+}
+
+.about-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.about-mission-card {
+  position: relative;
+  overflow: hidden;
+  padding: 38px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background: var(--surface);
+}
+
+.about-mission-card::after {
+  position: absolute;
+  right: -70px;
+  bottom: -100px;
+  width: 240px;
+  height: 240px;
+  border: 1px solid rgba(108, 59, 255, 0.12);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.about-vision-card {
+  background:
+    radial-gradient(
+      ellipse at 100% 100%,
+      rgba(108, 59, 255, 0.12),
+      transparent 55%
+    ),
+    var(--surface);
+}
+
+.about-card-label {
+  color: var(--brand-primary);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.about-mission-symbol {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-top: 30px;
+  border: 1px solid rgba(108, 59, 255, 0.2);
+  border-radius: 15px;
+  background: rgba(108, 59, 255, 0.1);
+  color: var(--brand-primary);
+  font-size: 25px;
+}
+
+.about-mission-card h2 {
+  margin: 26px 0 16px;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.about-mission-card h2 span {
+  color: var(--zento-accent);
+}
+
+.about-mission-card > p {
+  max-width: 500px;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* Principles */
+
+.about-principles {
+  background: var(--surface);
+}
+
+.about-principles .section-heading h2 span {
+  color: var(--zento-accent);
+}
+
+.about-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-principle-card {
+  padding: 30px;
+}
+
+.about-principle-number {
+  color: var(--brand-primary);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.about-principle-card h3 {
+  max-width: 400px;
+  margin: 22px 0 14px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.about-principle-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* Capabilities */
+
+.about-capabilities {
+  background: var(--page-bg);
+}
+
+.about-capabilities-heading {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: end;
+  gap: 60px;
+  margin-bottom: 48px;
+}
+
+.about-capabilities-heading h2 {
+  margin: 22px 0 0;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+}
+
+.about-capabilities-heading h2 span {
+  color: var(--zento-accent);
+}
+
+.about-capabilities-heading > p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.about-capabilities-list {
+  border-top: 1px solid var(--border-color);
+}
+
+.about-capability-item {
+  display: grid;
+  grid-template-columns: 60px 1fr 1.1fr 30px;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-capability-number {
+  color: var(--brand-primary);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.about-capability-item h3 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.about-capability-item > p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.about-capability-arrow {
+  color: var(--brand-primary);
+  font-size: 20px;
+  text-align: right;
+}
+
+/* VendorOS product note */
+
+.about-vendoros-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 48px;
+  padding: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  background: var(--surface);
+}
+
+.about-vendoros-mark {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  background: var(--brand-primary);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.about-vendoros-note h3 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.about-vendoros-note p {
+  max-width: 700px;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.about-vendoros-note a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: var(--brand-primary);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-vendoros-note a:hover {
+  gap: 12px;
+}
+
+/* CTA */
+
+.about-cta {
+  background: var(--surface);
+}
+
+.about-cta-card {
+  padding: 76px 28px;
+  border: 1px solid rgba(185, 160, 255, 0.2);
+  border-radius: 24px;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(108, 59, 255, 0.2),
+      transparent 55%
+    ),
+    #190f2e;
+  color: #ffffff;
+  text-align: center;
+}
+
+.about-cta-card .section-eyebrow {
+  color: #b9a0ff;
+}
+
+.about-cta-card h2 {
+  margin: 22px 0;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+}
+
+.about-cta-card h2 span {
+  color: #b9a0ff;
+}
+
+.about-cta-card > p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #c9c1d8;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.about-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.about-cta-card .home-button-secondary {
+  border-color: rgba(185, 160, 255, 0.3);
+  color: #ffffff;
+}
+
+.about-cta-tagline {
+  margin-top: 40px;
+  color: #b9a0ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .about-purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-capabilities-heading {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-capability-item {
+    grid-template-columns: 45px 1fr 30px;
+    gap: 18px;
+  }
+
+  .about-capability-item > p {
+    grid-column: 2 / 3;
+  }
+
+  .about-capability-arrow {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-hero {
+    padding: 76px 20px 72px;
+  }
+
+  .about-hero-content h1 {
+    font-size: clamp(38px, 10vw, 54px);
+  }
+
+  .about-hero-content > p {
+    font-size: 15px;
+  }
+
+  .about-hero-actions {
+    flex-direction: column;
+  }
+
+  .about-hero-actions .home-button {
+    width: 100%;
+  }
+
+  .about-mission-grid,
+  .about-principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-mission-card {
+    padding: 28px 24px;
+  }
+
+  .about-principle-card {
+    padding: 24px;
+  }
+
+  .about-capability-item {
+    grid-template-columns: 32px 1fr 20px;
+    gap: 12px;
+    padding: 24px 0;
+  }
+
+  .about-capability-item h3 {
+    font-size: 16px;
+  }
+
+  .about-capability-item > p {
+    font-size: 12px;
+  }
+
+  .about-vendoros-note {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .about-cta-card {
+    padding: 58px 22px;
+  }
+
+  .about-cta-actions {
+    flex-direction: column;
+  }
+
+  .about-cta-actions .home-button {
+    width: 100%;
+  }
+}
